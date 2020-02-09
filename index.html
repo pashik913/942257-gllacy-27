@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body style="background-color:#8a9c8f;">
-    <!-- Наставник, не ругайся, это временный инлайн для лучшей визуализации -->
-    <header>
+  <body>
+    <header class="container">
       <div class="header-wrapper">
         <img class="glaccy-main-logo" src="img/ico/logo.svg" width="164" height="64" alt="логотип магазина Глейси">
         <nav class="navigation">
@@ -14,98 +16,124 @@
             <li class="site-nav-item">
               <a href="catalog.html">Каталог</a>
             </li>
-            <li class="site-nav-item">Доставка и оплата</li>
-            <li class="site-nav-item">О Комапании</li>
+            <li class="site-nav-item">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="#">О Комапании</a>
+            </li>
           </ul>
           <ul class="login-nav-list">
             <li class="login-nav-item">
               <span class="visually-hidden">Поиск</span>
             </li>
-            <li class="login-nav-item">Вход</li>
-            <li class="login-nav-item">Пусто</li>
+            <li class="login-nav-item">
+              <a href="#">Вход</a>
+            </li>
+            <li class="login-nav-item">
+              <a href="#">Пусто</a>
+            </li>
           </ul>
         </nav>
       </div>
-      <div class="contacts">
-        <p>С 10 до 20, ежедневно</p>
-        <a href="tel:88124502525">8 812 450-25-25</a>
+      <div class="contacts-wrapper">
+        <div class="contacts">
+          <p>С 10 до 20, ежедневно</p>
+          <a href="tel:88124502525">8 812 450-25-25</a>
+        </div>
       </div>
     </header>
 
     <main>
       <h1 class="visually-hidden">Магазин мороженого собственного производства "Gllacy"</h1>
-      <section>
-        <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-        <p>Давайте оба</p>
+      <section class="container">
+        <div class="main-good">
+          <div class="main-iceream">
+            <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+            <button class="button" type="button" name="button">Давайте оба!</button>
+          </div>
+        </div>
       </section>
-      <section class="stock">
+      <section class="stock container">
         <div class="stock-wrapper">
           <ul class="stock-list">
             <li class="stock-item">
-              <h3>Малинка ларом</h3>
-              <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <button type="button" name="button">Хочу варенье!</button>
+              <div class="stock-item-raspback">
+                <h3>Малинка даром</h3>
+                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <button class="button" type="button" name="button">Хочу варенье!</button>
+              </div>
             </li>
             <li class="stock-item">
-              <h3>Шоколадки даром!</h3>
-              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <button type="button" name="button">Хочу шоколадки!</button>
+              <div class="stock-item-chocoback">
+                <h3>Шоколадки даром!</h3>
+                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                <button class="button" type="button" name="button">Хочу шоколадки!</button>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="goods">
+      <section class="goods container">
         <div class="goods-wrapper">
           <ul class="goods-list">
             <li class="goods-item">
               <img src="img/icecream-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p>310 ₽/<span>кг</span></p>
-              <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              <p class="goods-about"><span class="item-price">310 ₽</span><span class="item-weight">/кг</span></p>
+              <p class="goods-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             </li>
             <li class="goods-item">
               <img src="img/icecream-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              <p>380 ₽/<span>кг</span></p>
-              <p>Сливочно-кофейное с кусочками шоколада</p>
+              <p class="goods-about"><span class="item-price">380 ₽</span><span class="item-weight">/кг</span></p>
+              <p class="goods-text">Сливочно-кофейное с кусочками шоколада</p>
             </li>
             <li class="goods-item">
               <img src="img/icecream-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p>355 ₽/<span>кг</span></p>
-              <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+              <p class="goods-about"><span class="item-price">355 ₽</span><span class="item-weight">/кг</span></p>
+              <p class="goods-text">Сливочно-клубничное с присыпкой из белого шоколада</p>
             </li>
             <li class="goods-item">
               <img src="img/icecream-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              <p>415 ₽/<span>кг</span></p>
-              <p>Сливочное крем-брюле с карамельной подливкой</p>
+              <p class="goods-about"><span class="item-price">415 ₽</span><span class="item-weight">/кг</span></p>
+              <p class="goods-text">Сливочное крем-брюле с карамельной подливкой</p>
             </li>
           </ul>
         </div>
       </section>
-      <section>
+      <section class="container">
         <div class="about-us">
           <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-          <ul class="about-us-list">
-            <li class="about-us-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-            <li class="about-us-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
-          </ul>
-          <ul>
-            <li class="about-us-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-            <li class="about-us-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-          </ul>
+          <div class="about-us-list-wrapper">
+            <ul class="about-us-list">
+              <li class="about-us-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="about-us-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+            </ul>
+            <ul class="about-us-list">
+              <li class="about-us-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+              <li class="about-us-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section>
-        <p>Новое в нашем блоге</p>
-        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-      </section>
-      <section>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-      </section>
-      <section>
+      <div class="index-columns container">
+        <section class="blog">
+          <p>Новое в нашем блоге</p>
+          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </section>
+        <section class="subscribe">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <form class="" action="echo.htmlacademy.ru" method="post">
+            <input type="email" name="email" value="email@example.com">
+            <button type="button" action="post" name="button">Отправить</button>
+          </form>
+        </section>
+      </div>
+      <section class="map">
         <img src="img/map-bg.jpg" width="1302" height="430" alt="Мы находимся здесь">
       </section>
     </main>
-    <footer>
-      <div class="">
+    <footer class="container">
+      <div class="footer-columns">
         <ul class="social">
           <li>
             <img src="img/ico/twitter.svg" width="32" height="32" alt="twitter">
@@ -120,14 +148,18 @@
             <img src="img/ico/vk.svg" width="32" height="32" alt="vk">
           </li>
         </ul>
-        <ul>
-          <li>Для поставщиков</li>
-          <li>О производстве</li>
-          <li>Наши документы</li>
-          <li>Экологические стандарты</li>
-        </ul>
-        <div class="">
-          <img src="img/ico/logo-htmlacademy.svg" width="108" height="39" alt="логотип htmlacademy">
+        <div class="social-columns">
+          <ul>
+            <li>Для поставщиков</li>
+            <li>О производстве</li>
+          </ul>
+          <ul>
+            <li>Наши документы</li>
+            <li>Экологические стандарты</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/ico/logo-htmlacademy.svg" width="108" height="39" alt="логотип htmlacademy"></a>
           <p>Сделано в HTML Academy © 2019</p>
         </div>
       </div>
