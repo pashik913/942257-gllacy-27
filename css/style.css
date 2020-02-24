@@ -191,8 +191,10 @@ img {
 .site-nav-list {
   padding: 0;
   margin: 0;
+  margin-right: 374px;
 
   list-style: none;
+  align-self: center;
 }
 
 .login-nav-list {
@@ -205,13 +207,56 @@ img {
   font-weight: 500;
 }
 
-.site-nav-item {
+.login-nav-item a {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 17px 5px 16px;
+  border-radius: 25px;
+}
+
+.login-nav-item .login-nav-item-link-search {
+  padding: 0;
+}
+
+.login-nav-item-link span {
+  display: block;
+}
+
+.login-nav-item-link {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.login-nav-item-link svg {
+  margin-right: 7px;
+}
+
+.login-nav-item-link-search svg {
+  margin: 0;
+}
+
+.login-nav-item-link-search {
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 33px;
+  height: 33px;
+}
+
+.main-link {
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 .site-nav-item a,
 .login-nav-list a {
   color: #ffffff;
+}
+
+.site-nav-item a {
+  display: block;
+}
+
+.main-catalog-link {
+  margin-bottom: 5px;
 }
 
 .contacts p {
@@ -540,7 +585,7 @@ img {
   background-image: url("../img/strawberry-bg.jpg");
   background-repeat: repeat;
   background-size: cover;
-  background-position: 100px 50%;
+  background-position: 155px -147px;
   border-radius: 15px;
   padding-left: 20px;
   margin-right: 26px;
@@ -725,4 +770,182 @@ img {
 .social img {
   border: 3px solid rgba(255,255,255,0.5);
   border-radius: 50%;
+}
+
+.catlog-menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.catlog-menu-content {
+  display: none;
+  position: absolute;
+  background-color: #f8f7f4;
+  min-width: 143px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.catlog-menu-content span {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  margin: 0 10px;
+}
+
+.catlog-menu-content a {
+  color: #323232;
+  text-decoration: none;
+  display: block;
+}
+
+.catlog-menu-content a:hover {
+  background-color: #fbded8;
+}
+
+.catlog-menu-wrapper:hover .catlog-menu-content {
+  display: block;
+}
+
+.catlog-menu-content .catalog-menu-item {
+  font-weight: bold;
+}
+
+.catalog-menu-item {
+  border-bottom: 1px solid rgba(99, 99, 99, 0.4);
+}
+
+.login-nav-item-content {
+  border-radius: 5.1px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  width: 277px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  background-color: #f8f7f4;
+  display: none;
+}
+
+.login-nav-item-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.login-nav-item-wrapper:hover .login-nav-item-content {
+  display: block;
+}
+
+.restore-link,
+.registration-link {
+  display: block;
+}
+
+.restore-link span,
+.registration-link span {
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3);
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.login-wrapper button {
+  padding: 0;
+  width: 100px;
+  height: 44px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 20px;
+}
+
+.login-form-wrapper input {
+  width: 227px;
+  min-height: 44px;
+  border: solid 1px #d3d3d2;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  padding-left: 14px;
+}
+
+.login-form {
+  padding-left: 19px;
+  padding-top: 20px;
+}
+
+.password-input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login-nav-item .restore-link,
+.login-nav-item .registration-link {
+  padding: 0;
+}
+
+.login-wrapper {
+  padding-bottom: 22px;
+}
+
+.goods-catalog img {
+  width: 267px;
+  height: 267px;
+}
+
+.goods-catalog {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.goods-catalog li {
+  width: 25%;
+}
+
+.goods-item-non-hit::before {
+  content: none;
+}
+
+.search-wrapper {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+
+.search-input-wrapper {
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  width: 341px;
+  min-height: 84px;
+}
+
+.search-wrapper:hover .search-input-wrapper {
+  display: block;
+}
+
+.search-input-wrapper input {
+  width: 311px;
+  padding: 15px;
+  margin: 20px 15px;
+  height: 44px;
+  color: #999999;
+  border: solid 1px #d3d3d2;
+  border-radius: 5px;
 }
