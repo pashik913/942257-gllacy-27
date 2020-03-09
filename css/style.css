@@ -1562,6 +1562,7 @@ img {
   list-style: none;
 
   padding: 0 15px;
+  margin-bottom: 20px;
 }
 
 .cart-item-price {
@@ -1605,11 +1606,12 @@ img {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 17px;
+  margin-right: 20px;
 }
 
-.cart-item-price-for-all {
+.price-for-all {
   padding: 0;
-  margin: 0 auto;
+  margin: 0 20px;
   text-align: right;
   padding-top: 17px;
   margin-top: 18px;
@@ -1620,7 +1622,6 @@ img {
   font-weight: bold;
 
   border-top: 1px solid #cacac7;
-
 }
 
 .cart-item-name {
