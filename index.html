@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -325,31 +325,7 @@
         </button>
       </div>
     </section>
-    <script type="text/javascript">
-      var link = document.querySelector(".callback-link")
-      var popup = document.querySelector(".modal-wrapper");
-      var close = popup.querySelector(".modal-close");
-      var userName = popup.querySelector("[name=name]");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        userName.focus();
-      });
-
-      close.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      });
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          evt.preventDefault();
-          if (popup.classList.contains("modal-show")) {
-            popup.classList.remove("modal-show");
-          }
-        }
-      });
+    <script src="js/script.min.js">
     </script>
   </body>
 </html>
