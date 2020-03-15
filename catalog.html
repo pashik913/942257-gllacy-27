@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
@@ -143,7 +143,7 @@
         <h2>Сливочное мороженое</h2>
       </section>
       <section class="catalog-filter container">
-        <form class="catalog-filter-form" action="index.html" method="post">
+        <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="fieldset-sort">
             <legend>Сортировка</legend>
             <select class="sort-menu" name="menu">
@@ -154,7 +154,7 @@
             </select>
           </fieldset>
           <fieldset class="fieldset-price">
-            <legend>Цена: 110 руб. - 500 руб.</legend>
+            <legend>Цена: 100 руб. &ndash; 500 руб.</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -185,8 +185,7 @@
               <li>
                 <label class="filter-radio">
                   <input type="radio" name="product-group" class="visually-hidden">
-                  <span class="radio-indicator"></span>
-                  до 30%
+                  <span class="radio-indicator"></span>до 30%
                 </label>
               </li>
               <li>
@@ -276,7 +275,7 @@
               <span class="item-weight">/кг</span>
             </p>
             <p class="goods-text">
-              <span>Сливочно-клубничное с <br>присыпкой из белого шоколада</span>
+              <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
             </p>
             <div class="item-button-wrapper">
               <button class="item-button button" type="button" name="button">Быстрый просмотр</button>
@@ -302,7 +301,7 @@
               <span class="item-weight">/кг</span>
             </p>
             <p class="goods-text">
-              <span>Сливочное с брусничным<br> джемом</span>
+              <span>Сливочное с брусничным джемом</span>
             </p>
             <div class="item-button-wrapper">
               <button class="item-button button" type="button" name="button">Быстрый просмотр</button>
@@ -353,7 +352,7 @@
               <span class="item-price">440 ₽</span>
               <span class="item-weight">/кг</span></p>
             <p class="goods-text">
-              <span>Сливочно-ванильное с<br> кусочками шоколада</span>
+              <span>Сливочно-ванильное с кусочками шоколада</span>
             </p>
             <div class="item-button-wrapper">
               <button class="item-button button" type="button" name="button">Быстрый просмотр</button>
@@ -365,7 +364,7 @@
               <span class="item-price">435 ₽</span>
               <span class="item-weight">/кг</span></p>
             <p class="goods-text">
-              <span>Сливочноe с ментоловым<br> сиропом</span>
+              <span>Сливочноe с ментоловым сиропом</span>
             </p>
             <div class="item-button-wrapper">
               <button class="item-button button" type="button" name="button">Быстрый просмотр</button>
@@ -401,19 +400,19 @@
         <div class="pages-wrapper container">
           <ul class="pages-list">
             <li class="pages-item pages-item-active">
-              <a class="pages-link pages-link-active" href="#">1</a>
+              <a class="pages-link pages-link-active" href="#" aria-label="Первая страница">1</a>
             </li>
             <li class="pages-item">
-              <a class="pages-link" href="#">2</a>
+              <a class="pages-link" href="#" aria-label="Вторая страница">2</a>
             </li>
             <li class="pages-item">
-              <a class="pages-link" href="#">3</a>
+              <a class="pages-link" href="#" aria-label="Третья страница">3</a>
             </li>
             <li class="pages-item">
-              <a class="pages-link" href="#">4</a>
+              <a class="pages-link" href="#" aria-label="Четвёртая страница">4</a>
             </li>
             <li class="pages-item">
-              <a class="pages-link" href="#">5</a>
+              <a class="pages-link" href="#" aria-label="Пятая страница">5</a>
             </li>
           </ul>
         </div>
@@ -426,16 +425,16 @@
       <div class="footer-columns">
         <ul class="social">
           <li class="social-item">
-            <a class="social-link" href="#"><img class="social-img" src="img/ico/twitter.svg" width="32" height="32" alt="twitter"></a>
+            <a class="social-link" href="#"><img aria-label="Мы в твиттер" class="social-img" src="img/ico/twitter.svg" width="32" height="32" alt="twitter"></a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#"><img class="social-img" src="img/ico/instagram.svg" width="32" height="32" alt="instagram"></a>
+            <a class="social-link" href="#"><img aria-label="Мы в инстаграм" class="social-img" src="img/ico/instagram.svg" width="32" height="32" alt="instagram"></a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#"><img class="social-img" src="img/ico/fb.svg" width="32" height="32" alt="fb"></a>
+            <a class="social-link" href="#"><img aria-label="Мы в фейбуке" class="social-img" src="img/ico/fb.svg" width="32" height="32" alt="fb"></a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#"><img class="social-img" src="img/ico/vk.svg" width="32" height="32" alt="vk"></a>
+            <a class="social-link" href="#"><img aria-label="Мы вконтакте" class="social-img" src="img/ico/vk.svg" width="32" height="32" alt="vk"></a>
           </li>
         </ul>
         <div class="social-columns">

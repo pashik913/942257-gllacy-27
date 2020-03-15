@@ -61,7 +61,9 @@
                     </a>
                     <div class="search-input-wrapper">
                       <form class="" action="index.html" method="post">
-                        <input type="search" name="search" placeholder="Крем-брюле">
+                        <label>
+                          <input type="search" name="search" placeholder="Крем-брюле">
+                        </label>
                       </form>
                     </div>
                   </div>
@@ -76,8 +78,12 @@
                     <div class="nav-item-content">
                       <form class="login-form" action="index.html" method="post">
                         <div class="login-form-wrapper">
-                          <input class="email-input" type="email" name="email" placeholder="email@example.com">
-                          <input class="password-input" type="password" name="password" placeholder="********">
+                          <label>
+                            <input class="email-input" type="email" name="email" placeholder="email@example.com">
+                          </label>
+                          <label>
+                            <input class="password-input" type="password" name="password" placeholder="********">
+                          </label>
                         </div>
                         <div class="login-wrapper">
                           <button class="button" type="submit" name="button">Войти</button>
@@ -200,7 +206,7 @@
         </section>
         <section class="container">
           <div class="about-us">
-            <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+            <h3>Магазин Глэйси — это онлайн - и офлайн - магазин по продаже мороженого собственного производства на развес</h3>
             <div class="about-us-list-wrapper">
               <ul class="about-us-list">
                 <li class="about-us-item item-icecream">
@@ -225,35 +231,38 @@
           <section class="blog">
             <div class="blog-wrapper">
               <p>Новое в нашем блоге</p>
-              <a href="#"><span class="blog-link">10 способов сервировки фруктовых щербетов к столу</span></a>
+              <a class="blog-link" href="#"><span class="blog-link-text">10 способов сервировки фруктовых щербетов к столу</span></a>
             </div>
           </section>
           <section class="subscribe">
             <div class="subscribe-wrapper">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
               <form class="subscribe-form" action="echo.htmlacademy.ru" method="post">
-                <input class="subscribe-input" type="email" name="email" placeholder="email@example.com">
+                <label>
+                  <input class="subscribe-input" type="email" name="email" placeholder="email@example.com">
+                </label>
                 <button class="button" type="submit" name="button">Отправить</button>
               </form>
             </div>
           </section>
         </div>
         <section class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5738261114413!2d30.326791762514414!3d59.93921360581168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1584265655066!5m2!1sru!2s" width="1920" height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <img src="img/map-bg.jpg" width="1302" height="430" alt="Мы находимся здесь">
           <div class="map-wrapper container">
             <div class="map-contacts-wrapper">
-              <p class="map-contacts-text">
-                Адрес главного офиса и оффлайн-магазина:
+              <p class="map-contacts-text address-text">
+                Адрес главного офиса и офлайн - магазина:
               </p>
               <address class="map-contacts-adress">
-                ул. Большая Конюшенная <br> 18/8, Санкт-Петербург
+                ул. Большая Конюшенная <br> 19/8, Санкт-Петербург
               </address>
-              <p class="map-contacts-text">Для заказов по телефону</p>
+              <p class="map-contacts-text">Для заказов по телефону:</p>
               <a class="map-contacts-tel" href="tel:8812450-25-25">8 812 450-25-25</a>
-              <p class="map-contacts-text">
+              <p class="map-contacts-text contacts-text-margin">
                 (с 10 до 20 ежедневно)
               </p>
-              <button class="button map-button callback-link" type="button" name="button">Форма обратной связи</button>
+              <a class="button map-button callback-link">Форма обратной связи</a>
             </div>
           </div>
         </section>
@@ -262,16 +271,16 @@
         <div class="footer-columns">
           <ul class="social">
             <li class="social-item">
-              <a class="social-link" href="#"><img class="social-img" src="img/ico/twitter.svg" width="32" height="32" alt="twitter"></a>
+              <a class="social-link" href="#"><img aria-label="Мы в твиттер" class="social-img" src="img/ico/twitter.svg" width="32" height="32" alt="twitter"></a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="#"><img class="social-img" src="img/ico/instagram.svg" width="32" height="32" alt="instagram"></a>
+              <a class="social-link" href="#"><img aria-label="Мы в инстаграм" class="social-img" src="img/ico/instagram.svg" width="32" height="32" alt="instagram"></a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="#"><img class="social-img" src="img/ico/fb.svg" width="32" height="32" alt="fb"></a>
+              <a class="social-link" href="#"><img aria-label="Мы в фейбуке" class="social-img" src="img/ico/fb.svg" width="32" height="32" alt="fb"></a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="#"><img class="social-img" src="img/ico/vk.svg" width="32" height="32" alt="vk"></a>
+              <a class="social-link" href="#"><img aria-label="Мы вконтакте" class="social-img" src="img/ico/vk.svg" width="32" height="32" alt="vk"></a>
             </li>
           </ul>
           <div class="social-columns">
@@ -302,7 +311,7 @@
     </div>
     <section class="modal">
       <div class="modal-wrapper">
-        <form class="modal-form" action="index.html" method="post">
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <h2>Мы обязательно вам ответим!</h2>
           <p>
             <label class="visually-hidden" for="user-name">Ваши Фамилия и имя</label>
