@@ -741,6 +741,10 @@ img {
   padding-left: 20px;
 }
 
+.blog-link {
+  padding-bottom: 15px;
+}
+
 .blog-link:hover,
 .blog-link:focus {
   color: tomato;
@@ -780,6 +784,9 @@ img {
   background-color: grey;
   background-size: cover;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .subscribe button {
@@ -880,7 +887,7 @@ img {
 }
 
 .social li {
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .social li:last-child {
@@ -955,6 +962,7 @@ img {
 }
 
 .map iframe {
+  width: 100%;
   position: absolute;
 }
 
@@ -1088,7 +1096,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 41px;
+  margin-top: 39px;
   margin-bottom: 39px;
 }
 
@@ -1541,8 +1549,9 @@ img {
 }
 
 .fieldset-fat li {
-  padding-top: 3px;
-  padding-left: 49px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  padding-left: 48px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1580,6 +1589,7 @@ img {
 }
 
 .fieldset-option li {
+  padding: 8px 0;
   padding-left: 49px;
 }
 
@@ -1836,6 +1846,7 @@ img {
           flex-direction: row-reverse;
   margin-top: 17px;
   margin-right: 20px;
+  padding-bottom: 15px;
 }
 
 .price-for-all {
@@ -2178,4 +2189,9 @@ img {
 
 .nav-list-margin {
   margin-right: 334px;
+}
+
+.social-link img {
+  width: 32px;
+  height: 32px;
 }
