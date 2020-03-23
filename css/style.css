@@ -1483,6 +1483,7 @@ img {
 }
 
 .sort-menu {
+  -webkit-appearance: none;
   position: relative;
   padding-left: 12px;
   background-color: rgba(248, 247, 244, 0.2);
@@ -1495,7 +1496,6 @@ img {
   line-height: 18px;
   font-weight: 500;
 
-  -webkit-appearance: none;
   background-image: url("../img/ico/icon-down-dir-white.svg");
   background-repeat: no-repeat;
   background-position: 167px center;
