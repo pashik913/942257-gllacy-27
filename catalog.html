@@ -147,7 +147,7 @@
       <section class="catalog-filter container">
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="fieldset-sort">
-            <legend>Сортировка</legend>
+            <legend>Сортировка:</legend>
             <select class="sort-menu" name="menu">
               <option value="filter-popular" selected="selected">по популярности</option>
               <option value="filter-inexpensive">сначала недорогие</option>
@@ -157,13 +157,21 @@
           </fieldset>
           <fieldset class="fieldset-price">
             <legend>Цена: 100 руб. &ndash; 500 руб.</legend>
+            <div class="price-controls">
+              <label class="min-price">
+                <input name="min-price" type="hidden" value="100">
+              </label>
+              <label class="max-price">
+                <input name="max-price" type="hidden" value="500">
+              </label>
+            </div>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar" style="margin-left: 11%; width: 56%"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <button type="button" class="toggle toggle-min" aria-label="Минимальное значение фильтра"></button>
+                <button type="button" class="toggle toggle-max" aria-label="Максимальное значение фильтра"></button>
               </div>
             </div>
           </fieldset>
@@ -172,27 +180,27 @@
             <ul>
               <li>
                 <label class="filter-radio">
-                  <input type="radio" name="product-group" class="visually-hidden">
+                  <input type="radio" name="product-group" value="0%" class="visually-hidden">
                   <span class="radio-indicator"></span>
                   0%
                 </label>
               </li>
               <li>
                 <label class="filter-radio">
-                  <input checked type="radio" name="product-group" class="visually-hidden">
+                  <input checked type="radio" value="<=10%" name="product-group" class="visually-hidden">
                   <span class="radio-indicator"></span>
                   до 10%
                 </label>
               </li>
               <li>
                 <label class="filter-radio">
-                  <input type="radio" name="product-group" class="visually-hidden">
+                  <input type="radio" value="<=30%" name="product-group" class="visually-hidden">
                   <span class="radio-indicator"></span>до 30%
                 </label>
               </li>
               <li>
                 <label class="filter-radio">
-                  <input type="radio" name="product-group" class="visually-hidden">
+                  <input type="radio" value=">30%" name="product-group" class="visually-hidden">
                   <span class="radio-indicator"></span>
                   выше 30%
                 </label>
